@@ -72,26 +72,64 @@
 //Ternary Operator
 //Write a ternary operator to alert gender
 
-const myGender = prompt("What is your gender (m/f?");
-// if (myGender) {
-//   alert("You are male");
-// } else {
-//   alert("you are female");
+// const myGender = prompt("What is your gender (m/f?");
+// // if (myGender) {
+// //   alert("You are male");
+// // } else {
+// //   alert("you are female");
+// // }
+
+// //myGender === "m" ? alert("You are male") : alert("you are female");
+
+// //switch case using ternary operator
+
+// // g = m
+// // g= f
+// //g = o
+// //g = random value
+
+// myGender === "m"
+//   ? alert("You are male")
+//   : myGender === "f"
+//   ? alert("You are female")
+//   : myGender === "o"
+//   ? alert("You are Other")
+//   : alert("Wrong Gender");
+
+//write a js program to tell the part of the day using the time provided by user
+//Good Morning => 5-12
+// Good Afternoon => 12-3
+// Good Evening = 3 - 6
+// Good night = 6 - 11
+
+//Using ES5
+
+// const time = Number(prompt("Enter the time in hours (0-23)"));
+// switch (true) {
+//   case time >= 5 && time < 12:
+//     alert("Good Morning");
+//     break;
+//   case time >= 12 && time < 15:
+//     alert("Good afternoon");
+//     break;
+//   case time >= 15 && time < 18:
+//     alert("Good evening");
+//   case time >= 15 && time < 18:
+//     alert("Good evening");
+//     break;
+//   default:
+//     alert("Enter correct time");
 // }
 
-//myGender === "m" ? alert("You are male") : alert("you are female");
-
-//switch case using ternary operator
-
-// g = m
-// g= f
-//g = o
-//g = random value
-
-myGender === "m"
-  ? alert("You are male")
-  : myGender === "f"
-  ? alert("You are female")
-  : myGender === "o"
-  ? alert("You are Other")
-  : alert("Wrong Gender");
+// Ternary operator
+const time = Number(prompt("Enter the time in hours (0-23)"));
+const partOfDay =
+  time >= 5 && time < 12
+    ? alert("Good morning")
+    : time >= 12 && time < 15
+    ? alert("Good afternoon")
+    : time >= 15 && time < 18
+    ? alert("Good evening")
+    : time >= 18 && time < 23
+    ? alert("Good night")
+    : alert("Please enter a valid time");
