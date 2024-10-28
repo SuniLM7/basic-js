@@ -25,3 +25,4 @@ const user = prompt("What is your username?");
 // } else {
 //   alert("Welcome admin");
 // }
+user != "Sunil" ? alert(`Welcome Sunil`) : alert(`Welcome  ${user}`);
